@@ -9,7 +9,8 @@ namespace lab1_OrganizerWindowApplication
     {
         public string Login { get; private set; }
         public string Password { get; private set; }
-        public BindingList<ToDoItem> ToDoS { get; private set; }
+        public BindingList<ToDoItem> ToDoS { get; set; }
+        private List<ToDoItem> meh { get; set; }
         public User(string login, string password)
         {
             if (string.IsNullOrEmpty(login))
@@ -30,7 +31,34 @@ namespace lab1_OrganizerWindowApplication
         {
             if (ToDoS == null)
                 ToDoS = new BindingList<ToDoItem>();
-            ToDoS.Add(new ToDoItem(Name, Type, Date, State, Content));
+
+            var flag = true;
+            for (int i = 0; i < ToDoS.Count; i++)
+            {
+                if (ToDoS[i].getDate() > Date)
+                {
+                    flag = false;
+                    ToDoS.Insert(i, new ToDoItem(Name, Type, Date, State, Content));
+                    break;
+                }
+            }
+            if (flag)
+                ToDoS.Add(new ToDoItem(Name, Type, Date, State, Content));
+            
+            
+            //backing = new List<MyClass>();
+            //bl = new BindingList<MyClass>(backing);
+            //var tmp = ToDoS;
+            //var sorted = from todo in ToDoS
+            //             orderby todo.
+            //             descending
+            //             select todo;
+        }
+
+        private void SortBindingList()
+        {
+            meh.Sort((ToDoItem X, ToDoItem Y) => X.Time.CompareTo(Y.Time));
+            ToDoS.ResetBindings();
         }
 
         public void removeAt(int index)

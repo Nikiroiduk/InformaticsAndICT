@@ -29,9 +29,11 @@ namespace lab1_OrganizerWindowApplication
             TypeComboBox.Items.Add(Types.Meeting);
             TypeComboBox.Items.Add(Types.Memo);
             TypeComboBox.Items.Add(Types.Task);
+            TypeComboBox.SelectedIndex = 0;
 
             StateComboBox.Items.Add(States.Active);
             StateComboBox.Items.Add(States.Completed);
+            StateComboBox.SelectedIndex = 0;
 
             if (state)
             {
@@ -79,7 +81,14 @@ namespace lab1_OrganizerWindowApplication
         {
             if (state)
             {
-                user.removeAt(index);
+                string message = $"Do you want to delete: {user.ToDoS[index].Name}?";
+                string title = "Delete task";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show(message, title, buttons);
+                if (result == DialogResult.Yes)
+                {
+                    user.ToDoS.RemoveAt(this.index);
+                }
             }
             this.Close();
         }

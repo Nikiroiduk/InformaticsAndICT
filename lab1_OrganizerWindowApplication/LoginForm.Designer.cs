@@ -43,76 +43,89 @@ namespace lab1_OrganizerWindowApplication
             // LoginLabel
             // 
             this.LoginLabel.AutoSize = true;
-            this.LoginLabel.Location = new System.Drawing.Point(54, 58);
+            this.LoginLabel.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginLabel.Location = new System.Drawing.Point(25, 41);
             this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(33, 13);
+            this.LoginLabel.Size = new System.Drawing.Size(70, 32);
             this.LoginLabel.TabIndex = 0;
             this.LoginLabel.Text = "Login";
             // 
             // PasswordLabel
             // 
             this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Location = new System.Drawing.Point(54, 100);
+            this.PasswordLabel.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLabel.Location = new System.Drawing.Point(25, 115);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(53, 13);
+            this.PasswordLabel.Size = new System.Drawing.Size(107, 32);
             this.PasswordLabel.TabIndex = 1;
             this.PasswordLabel.Text = "Password";
             // 
             // LoginTextBox
             // 
             this.LoginTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LoginTextBox.Location = new System.Drawing.Point(228, 58);
+            this.LoginTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginTextBox.Location = new System.Drawing.Point(31, 83);
             this.LoginTextBox.MaxLength = 15;
             this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.Size = new System.Drawing.Size(100, 20);
-            this.LoginTextBox.TabIndex = 2;
+            this.LoginTextBox.Size = new System.Drawing.Size(204, 29);
+            this.LoginTextBox.TabIndex = 1;
             // 
             // PasswordTextBox
             // 
             this.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTextBox.Location = new System.Drawing.Point(228, 100);
+            this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTextBox.Location = new System.Drawing.Point(31, 150);
             this.PasswordTextBox.MaxLength = 15;
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(100, 20);
-            this.PasswordTextBox.TabIndex = 3;
+            this.PasswordTextBox.Size = new System.Drawing.Size(204, 29);
+            this.PasswordTextBox.TabIndex = 2;
             // 
             // PasswordShowCheckBox
             // 
             this.PasswordShowCheckBox.AutoSize = true;
-            this.PasswordShowCheckBox.Location = new System.Drawing.Point(121, 102);
+            this.PasswordShowCheckBox.FlatAppearance.BorderSize = 0;
+            this.PasswordShowCheckBox.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordShowCheckBox.Location = new System.Drawing.Point(249, 150);
             this.PasswordShowCheckBox.Name = "PasswordShowCheckBox";
-            this.PasswordShowCheckBox.Size = new System.Drawing.Size(51, 17);
-            this.PasswordShowCheckBox.TabIndex = 4;
+            this.PasswordShowCheckBox.Size = new System.Drawing.Size(72, 29);
+            this.PasswordShowCheckBox.TabIndex = 5;
             this.PasswordShowCheckBox.Text = "show";
             this.PasswordShowCheckBox.UseVisualStyleBackColor = true;
             this.PasswordShowCheckBox.CheckedChanged += new System.EventHandler(this.PasswordShowCheckBox_CheckedChanged);
             // 
             // CancelBtn
             // 
-            this.CancelBtn.Location = new System.Drawing.Point(252, 202);
+            this.CancelBtn.BackgroundImage = global::lab1_OrganizerWindowApplication.Properties.Resources.close;
+            this.CancelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CancelBtn.FlatAppearance.BorderSize = 0;
+            this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CancelBtn.Location = new System.Drawing.Point(305, -1);
+            this.CancelBtn.Margin = new System.Windows.Forms.Padding(5);
             this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(75, 23);
-            this.CancelBtn.TabIndex = 5;
-            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.Padding = new System.Windows.Forms.Padding(5);
+            this.CancelBtn.Size = new System.Drawing.Size(30, 30);
+            this.CancelBtn.TabIndex = 6;
             this.CancelBtn.UseVisualStyleBackColor = true;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
             // LoginBtn
             // 
-            this.LoginBtn.Location = new System.Drawing.Point(151, 202);
+            this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.Location = new System.Drawing.Point(31, 241);
             this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(75, 23);
-            this.LoginBtn.TabIndex = 6;
+            this.LoginBtn.Size = new System.Drawing.Size(100, 40);
+            this.LoginBtn.TabIndex = 3;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = true;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // SignUpBtn
             // 
-            this.SignUpBtn.Location = new System.Drawing.Point(57, 202);
+            this.SignUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpBtn.Location = new System.Drawing.Point(201, 241);
             this.SignUpBtn.Name = "SignUpBtn";
-            this.SignUpBtn.Size = new System.Drawing.Size(75, 23);
-            this.SignUpBtn.TabIndex = 7;
+            this.SignUpBtn.Size = new System.Drawing.Size(100, 40);
+            this.SignUpBtn.TabIndex = 4;
             this.SignUpBtn.Text = "SignUp";
             this.SignUpBtn.UseVisualStyleBackColor = true;
             this.SignUpBtn.Click += new System.EventHandler(this.SignUpBtn_Click);
@@ -120,17 +133,19 @@ namespace lab1_OrganizerWindowApplication
             // errMsgLabel
             // 
             this.errMsgLabel.AutoSize = true;
+            this.errMsgLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.errMsgLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.errMsgLabel.Location = new System.Drawing.Point(226, 134);
+            this.errMsgLabel.Location = new System.Drawing.Point(28, 193);
             this.errMsgLabel.Name = "errMsgLabel";
-            this.errMsgLabel.Size = new System.Drawing.Size(0, 13);
+            this.errMsgLabel.Size = new System.Drawing.Size(0, 17);
             this.errMsgLabel.TabIndex = 8;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 450);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(335, 328);
             this.Controls.Add(this.errMsgLabel);
             this.Controls.Add(this.SignUpBtn);
             this.Controls.Add(this.LoginBtn);

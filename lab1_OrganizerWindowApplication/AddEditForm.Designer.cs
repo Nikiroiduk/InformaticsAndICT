@@ -59,8 +59,8 @@ namespace lab1_OrganizerWindowApplication
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.88889F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.4183F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.5817F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 87F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -71,12 +71,12 @@ namespace lab1_OrganizerWindowApplication
             // 
             this.ContentTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ContentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContentTextBox.Location = new System.Drawing.Point(3, 37);
+            this.ContentTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContentTextBox.Location = new System.Drawing.Point(3, 41);
             this.ContentTextBox.MaxLength = 1000;
             this.ContentTextBox.Multiline = true;
             this.ContentTextBox.Name = "ContentTextBox";
-            this.ContentTextBox.Size = new System.Drawing.Size(448, 266);
+            this.ContentTextBox.Size = new System.Drawing.Size(448, 262);
             this.ContentTextBox.TabIndex = 2;
             // 
             // tableLayoutPanel2
@@ -97,6 +97,7 @@ namespace lab1_OrganizerWindowApplication
             // RemoveCancelBtn
             // 
             this.RemoveCancelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RemoveCancelBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveCancelBtn.Location = new System.Drawing.Point(227, 3);
             this.RemoveCancelBtn.Name = "RemoveCancelBtn";
             this.RemoveCancelBtn.Size = new System.Drawing.Size(218, 45);
@@ -108,6 +109,7 @@ namespace lab1_OrganizerWindowApplication
             // AddEditBtn
             // 
             this.AddEditBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddEditBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddEditBtn.Location = new System.Drawing.Point(3, 3);
             this.AddEditBtn.Name = "AddEditBtn";
             this.AddEditBtn.Size = new System.Drawing.Size(218, 45);
@@ -119,8 +121,8 @@ namespace lab1_OrganizerWindowApplication
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.60714F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88.39286F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.07143F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.92857F));
             this.tableLayoutPanel3.Controls.Add(this.NameLabel, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.NameTextBox, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -128,16 +130,17 @@ namespace lab1_OrganizerWindowApplication
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(448, 28);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(448, 32);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NameLabel.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameLabel.Location = new System.Drawing.Point(3, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(45, 28);
+            this.NameLabel.Size = new System.Drawing.Size(65, 32);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name: ";
             this.NameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,11 +149,11 @@ namespace lab1_OrganizerWindowApplication
             // 
             this.NameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTextBox.Location = new System.Drawing.Point(54, 3);
+            this.NameTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTextBox.Location = new System.Drawing.Point(74, 3);
             this.NameTextBox.MaxLength = 25;
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(391, 23);
+            this.NameTextBox.Size = new System.Drawing.Size(371, 29);
             this.NameTextBox.TabIndex = 1;
             // 
             // tableLayoutPanel4
@@ -174,34 +177,38 @@ namespace lab1_OrganizerWindowApplication
             // StateComboBox
             // 
             this.StateComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StateComboBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StateComboBox.FormattingEnabled = true;
             this.StateComboBox.Location = new System.Drawing.Point(232, 13);
             this.StateComboBox.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
             this.StateComboBox.Name = "StateComboBox";
-            this.StateComboBox.Size = new System.Drawing.Size(203, 21);
+            this.StateComboBox.Size = new System.Drawing.Size(203, 25);
             this.StateComboBox.TabIndex = 1;
             // 
             // TypeComboBox
             // 
             this.TypeComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TypeComboBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TypeComboBox.FormattingEnabled = true;
             this.TypeComboBox.Location = new System.Drawing.Point(13, 13);
             this.TypeComboBox.Margin = new System.Windows.Forms.Padding(3, 3, 8, 3);
             this.TypeComboBox.Name = "TypeComboBox";
-            this.TypeComboBox.Size = new System.Drawing.Size(203, 21);
+            this.TypeComboBox.Size = new System.Drawing.Size(203, 25);
             this.TypeComboBox.TabIndex = 0;
             // 
             // dateTimePicker1
             // 
             this.tableLayoutPanel4.SetColumnSpan(this.dateTimePicker1, 2);
-            this.dateTimePicker1.CustomFormat = "dd/mm/yyyy hh:mm tt";
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy    |     HH:mm";
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(13, 47);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(422, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(422, 25);
             this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 1, 2, 13, 4, 0, 0);
             // 
             // AddEditForm
             // 

@@ -37,39 +37,55 @@ namespace lab1_OrganizerWindowApplication
                     users = (List<User>)formatter.Deserialize(fs);
             }
 
-            var user = new User(LoginTextBox.Text, PasswordTextBox.Text);
-            var existingUser = users.FirstOrDefault(u => u.Login == user.Login);
-
-            if (LoginTextBox.Text == "" || PasswordTextBox.Text == "") errMsgLabel.Text = "Fields can't be empty!";
-            else if (existingUser == null) errMsgLabel.Text = "This user doesn't exist!";
+            if(LoginTextBox.Text == "" || PasswordTextBox.Text == "")
+            {
+                errMsgLabel.Text = "Fields can't be empty!";
+            }
             else
             {
-                activeUser = existingUser;
-                this.Close();
-            } 
+                var user = new User(LoginTextBox.Text, PasswordTextBox.Text);
+                var existingUser = users.FirstOrDefault(u => u.Login == user.Login);
+
+                if (existingUser == null) errMsgLabel.Text = "This user doesn't exist!";
+                else if (existingUser.Password != user.Password) errMsgLabel.Text = "Wrong password!";
+                else
+                {
+                    activeUser = existingUser;
+                    this.Close();
+                } 
+            }
+
         }
 
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
-            var user = new User(LoginTextBox.Text, PasswordTextBox.Text);
-            var existingUser = users.FirstOrDefault(u => u.Login == user.Login);
-            if (existingUser == null)
+            if (LoginTextBox.Text == "" || PasswordTextBox.Text == "")
             {
-                users.Add(user);
-                foreach (var item in users)
-                {
-                    using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
-                    {
-                        formatter.Serialize(fs, users);
-                    }
-                }
-                activeUser = user;
-                this.Close();
+                errMsgLabel.Text = "Fields can't be empty!";
             }
             else
             {
-                errMsgLabel.Text = "User with this login already exist!";
+                var user = new User(LoginTextBox.Text, PasswordTextBox.Text);
+                var existingUser = users.FirstOrDefault(u => u.Login == user.Login);
+                if (existingUser == null)
+                {
+                    users.Add(user);
+                    foreach (var item in users)
+                    {
+                        using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
+                        {
+                            formatter.Serialize(fs, users);
+                        }
+                    }
+                    activeUser = user;
+                    this.Close();
+                }
+                else
+                {
+                    errMsgLabel.Text = "User with this login already exist!";
+                }
             }
+
         }
 
         private void PasswordShowCheckBox_CheckedChanged(object sender, EventArgs e)
