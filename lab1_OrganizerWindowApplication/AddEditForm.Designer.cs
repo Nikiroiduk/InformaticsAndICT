@@ -140,7 +140,7 @@ namespace lab1_OrganizerWindowApplication
             this.NameLabel.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameLabel.Location = new System.Drawing.Point(3, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(65, 32);
+            this.NameLabel.Size = new System.Drawing.Size(66, 32);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name: ";
             this.NameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,10 +150,10 @@ namespace lab1_OrganizerWindowApplication
             this.NameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NameTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTextBox.Location = new System.Drawing.Point(74, 3);
+            this.NameTextBox.Location = new System.Drawing.Point(75, 3);
             this.NameTextBox.MaxLength = 25;
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(371, 29);
+            this.NameTextBox.Size = new System.Drawing.Size(370, 29);
             this.NameTextBox.TabIndex = 1;
             // 
             // tableLayoutPanel4
