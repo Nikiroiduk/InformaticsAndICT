@@ -34,7 +34,6 @@ namespace lab3_Copywriter
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.BatchModeBtn = new System.Windows.Forms.Button();
             this.SaveImageBtn = new System.Windows.Forms.Button();
@@ -59,14 +58,16 @@ namespace lab3_Copywriter
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -128,17 +129,6 @@ namespace lab3_Copywriter
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(638, 398);
             this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(498, 392);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel5
             // 
@@ -260,6 +250,7 @@ namespace lab3_Copywriter
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // operationsToolStripMenuItem
             // 
@@ -276,18 +267,21 @@ namespace lab3_Copywriter
             this.addCopyrightToolStripMenuItem.Name = "addCopyrightToolStripMenuItem";
             this.addCopyrightToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.addCopyrightToolStripMenuItem.Text = "Add copyright";
+            this.addCopyrightToolStripMenuItem.Click += new System.EventHandler(this.AddCopyrightBtn_Click);
             // 
             // saveImageToolStripMenuItem
             // 
             this.saveImageToolStripMenuItem.Name = "saveImageToolStripMenuItem";
             this.saveImageToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.saveImageToolStripMenuItem.Text = "Save image...";
+            this.saveImageToolStripMenuItem.Click += new System.EventHandler(this.SaveImageBtn_Click);
             // 
             // batchmodeToolStripMenuItem
             // 
             this.batchmodeToolStripMenuItem.Name = "batchmodeToolStripMenuItem";
             this.batchmodeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.batchmodeToolStripMenuItem.Text = "Batch mode";
+            this.batchmodeToolStripMenuItem.Click += new System.EventHandler(this.BatchModeBtn_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -303,18 +297,21 @@ namespace lab3_Copywriter
             this.copyrightTextToolStripMenuItem.Name = "copyrightTextToolStripMenuItem";
             this.copyrightTextToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.copyrightTextToolStripMenuItem.Text = "Copyright text...";
+            this.copyrightTextToolStripMenuItem.Click += new System.EventHandler(this.copyrightTextToolStripMenuItem_Click);
             // 
             // copyngDirectoryToolStripMenuItem
             // 
             this.copyngDirectoryToolStripMenuItem.Name = "copyngDirectoryToolStripMenuItem";
             this.copyngDirectoryToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.copyngDirectoryToolStripMenuItem.Text = "Copyright directory...";
+            this.copyngDirectoryToolStripMenuItem.Click += new System.EventHandler(this.copyngDirectoryToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -325,6 +322,17 @@ namespace lab3_Copywriter
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(50, 50);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(498, 392);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MainWindow
             // 
@@ -340,11 +348,11 @@ namespace lab3_Copywriter
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -380,6 +388,7 @@ namespace lab3_Copywriter
         private System.Windows.Forms.Button AddCopyrightBtn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog2;
     }
 }
 

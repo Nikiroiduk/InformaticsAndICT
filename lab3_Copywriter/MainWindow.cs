@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.IO;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace lab3_Copywriter
@@ -20,6 +17,7 @@ namespace lab3_Copywriter
         {
             InitializeComponent();
             dataGridView1.DataSource = copyrightImages;
+            dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -94,7 +92,7 @@ namespace lab3_Copywriter
             img = (Bitmap)Image.FromFile(adr);
             var font = new Font("Times New Roman", ((float)Math.Log10(pictureBox1.Image.Width) * 30) * 20 < pictureBox1.Image.Width ? ((float)Math.Log10(pictureBox1.Image.Width) * 30) : (float)Math.Log10(pictureBox1.Image.Width) * 20, GraphicsUnit.Pixel);
             var gr = Graphics.FromImage(img);
-            gr.DrawString("copyright", font, Brushes.Red, new Point(0, 0));
+            gr.DrawString(Settings.CopyrightText, font, Brushes.Red, new Point(10, 10));
             pictureBox1.Image = img;
             var tmp = adr.Split('\\');
             var log = new logItem(tmp[tmp.Length - 1], Settings.CopyrightText, DateTime.Now, img.Width, img.Height);
@@ -147,18 +145,43 @@ namespace lab3_Copywriter
 
         private void BatchModeBtn_Click(object sender, EventArgs e)
         {
+            var i = 0;
             foreach (var item in files)
             {
                 var img = (Bitmap)Image.FromFile(item);
                 var font = new Font("Times New Roman", ((float)Math.Log10(img.Width) * Settings.CopyrightTextFontSize) * 20 < img.Width ? ((float)Math.Log10(img.Width) * Settings.CopyrightTextFontSize) : (float)Math.Log10(img.Width) * Settings.CopyrightTextFontSize / 2, GraphicsUnit.Pixel);
                 var gr = Graphics.FromImage(img);
                 gr.DrawString(Settings.CopyrightText, font, Settings.CopyrightTextColor, new Point(10, 10));
-
                 var tmp = item.Split('\\');
                 var log = new logItem(tmp[tmp.Length - 1], Settings.CopyrightText, DateTime.Now, img.Width, img.Height);
                 copyrightImages.Add(log);
-                pictureBox1.Image = img;
-                pictureBox1.Image.Save(Settings.CopyrightDirectory, System.Drawing.Imaging.ImageFormat.Png);
+                img.Save($@"{Settings.CopyrightDirectory}\{i++}.png");
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var hf = new Form();
+            hf.Text = "Help";
+            hf.ShowDialog();
+        }
+
+        private void copyrightTextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var meh = new cTextForm();
+            meh.ShowDialog();
+        }
+
+        private void copyngDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Settings.CopyrightDirectory = folderBrowserDialog1.SelectedPath;
             }
         }
     }
