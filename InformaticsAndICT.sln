@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1_OrganizerWindowApplica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab2_DirectoryBrowserWindowApplication", "lab2_DirectoryBrowserWindowApplication\lab2_DirectoryBrowserWindowApplication.csproj", "{BF95949F-37A6-4372-9F1B-AC58AED8564F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3_Copywriter", "lab3_Copywriter\lab3_Copywriter.csproj", "{0A5D6599-CF38-4A7B-ACC4-762343A69D9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BF95949F-37A6-4372-9F1B-AC58AED8564F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF95949F-37A6-4372-9F1B-AC58AED8564F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF95949F-37A6-4372-9F1B-AC58AED8564F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A5D6599-CF38-4A7B-ACC4-762343A69D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A5D6599-CF38-4A7B-ACC4-762343A69D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A5D6599-CF38-4A7B-ACC4-762343A69D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A5D6599-CF38-4A7B-ACC4-762343A69D9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

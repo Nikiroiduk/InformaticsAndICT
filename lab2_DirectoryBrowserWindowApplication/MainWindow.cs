@@ -23,7 +23,7 @@ namespace lab2_DirectoryBrowserWindowApplication
         {
             folderBrowserDialog1.SelectedPath = selectedDirectory;
             DialogResult drResult = folderBrowserDialog1.ShowDialog();
-            if (drResult == System.Windows.Forms.DialogResult.OK)
+            if (drResult == DialogResult.OK)
                 selectedDirectory = folderBrowserDialog1.SelectedPath;
             initTreeView();
         }
