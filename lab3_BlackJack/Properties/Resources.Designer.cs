@@ -143,6 +143,36 @@ namespace lab3_BlackJack.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap DealBtn {
+            get {
+                object obj = ResourceManager.GetObject("DealBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DealBtnHover {
+            get {
+                object obj = ResourceManager.GetObject("DealBtnHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DealBtnPressed {
+            get {
+                object obj = ResourceManager.GetObject("DealBtnPressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap EightClub {
             get {
                 object obj = ResourceManager.GetObject("EightClub", resourceCulture);
@@ -256,6 +286,36 @@ namespace lab3_BlackJack.Properties {
         public static System.Drawing.Bitmap FourSpade {
             get {
                 object obj = ResourceManager.GetObject("FourSpade", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap HitBtn {
+            get {
+                object obj = ResourceManager.GetObject("HitBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap HitBtnHover {
+            get {
+                object obj = ResourceManager.GetObject("HitBtnHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap HitBtnPressed {
+            get {
+                object obj = ResourceManager.GetObject("HitBtnPressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -496,6 +556,36 @@ namespace lab3_BlackJack.Properties {
         public static System.Drawing.Bitmap SixSpade {
             get {
                 object obj = ResourceManager.GetObject("SixSpade", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap StandBtn {
+            get {
+                object obj = ResourceManager.GetObject("StandBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap StandBtnHover {
+            get {
+                object obj = ResourceManager.GetObject("StandBtnHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap StandBtnPressed {
+            get {
+                object obj = ResourceManager.GetObject("StandBtnPressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

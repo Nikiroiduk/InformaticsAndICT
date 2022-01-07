@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,6 +42,10 @@ namespace lab3_BlackJack.Model
         {
             this._Stake += Stake;
         }
+        public void decStake(int Stake)
+        {
+            this._Stake -= Stake;
+        }
 
         public string getName()
         {
@@ -54,6 +60,11 @@ namespace lab3_BlackJack.Model
         public int getMoney()
         {
             return this._Money;
+        }
+
+        public void setMoney(int Money)
+        {
+            this._Money = Money;
         }
 
         public int getStake()

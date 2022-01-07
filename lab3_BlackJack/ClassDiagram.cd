@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="lab3_BlackJack.Program">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Controller\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.MainWindow">
+    <Position X="6.5" Y="6.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAIYIAEQIz4CABBBBoGAQGAmgAAAFBIQoGAAAYAQACA=</HashCode>
+      <FileName>View\MainWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.Controller.GameController">
+    <Position X="10" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\GameController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.Model.Card">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAADACAAAFAAAAEAAAAAAAQAAAAAIAAAAAA=</HashCode>
+      <FileName>Model\Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.Model.Deck">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABAAAAAAAAAAABAAAAAQgAAAAAAA=</HashCode>
+      <FileName>Model\Deck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.Model.Game">
+    <Position X="6.5" Y="2.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQASAAAUAAAAQAAAAAAAAAAAAAAAAAIgAAgAAAAAAA=</HashCode>
+      <FileName>Model\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.Model.Player">
+    <Position X="10.75" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAQAAACAABAAAAEIAIwEgAAAQAAAAAEAAAAIiA=</HashCode>
+      <FileName>Model\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.Properties.Parameters">
+    <Position X="3" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Properties\Parameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.Properties.Resources">
+    <Position X="3" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AQECAEBIFIBS1o6ACL4hGGYQAQBFAAwIGVQgrJEGBIQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.Properties.Settings">
+    <Position X="6.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3_BlackJack.View.StartWindow">
+    <Position X="12.25" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAkACAAUACAAABAAAACARAACAAAQCAAIoAAAAAAAACA=</HashCode>
+      <FileName>View\StartWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="lab3_BlackJack.Model.Rank">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
+      <FileName>Model\RankEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="lab3_BlackJack.Model.Suit">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAACA=</HashCode>
+      <FileName>Model\SuitEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

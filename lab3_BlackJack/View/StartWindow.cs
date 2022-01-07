@@ -18,15 +18,15 @@ namespace lab3_BlackJack.View
         {
             if (NameTextBox.Text == "")
             {
-                errLabel.Text = $"Name con not be empty!";
+                errLabel.Text = $"Name can not be empty!";
             }
             else if (MoneyTextBox.Text == "")
             {
                 errLabel.Text = $"Money field need to be filled!";
             }
-            else if (Convert.ToInt32(MoneyTextBox.Text) < Properties.Parameters.MinimalMoney)
+            else if (Convert.ToInt32(MoneyTextBox.Text) < Properties.Parameters.MinimalStake)
             {
-                errLabel.Text = $"Money should be at least\nequals to {Properties.Parameters.MinimalMoney}!";
+                errLabel.Text = $"Money should be at least\nequals to {Properties.Parameters.MinimalStake}!";
             }
             else
             {

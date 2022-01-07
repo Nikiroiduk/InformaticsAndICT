@@ -8,7 +8,7 @@ namespace lab3_BlackJack.Properties
 {
     public static class Parameters
     {
-        public static int MinimalMoney = 100;
+        public static int MinimalStake = 100;
         public static int StartMoney = 1000;
     }
 }

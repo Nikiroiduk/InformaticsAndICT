@@ -84,6 +84,7 @@
     <EmbeddedResource Include="View\StartWindow.resx">
       <DependentUpon>StartWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -267,6 +268,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Chip100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StandBtnPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StandBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StandBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HitBtnPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HitBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HitBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DealBtnPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DealBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DealBtn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
