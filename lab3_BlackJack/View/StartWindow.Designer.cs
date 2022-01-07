@@ -147,6 +147,7 @@ namespace lab3_BlackJack.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(354, 334);
             this.ControlBox = false;
             this.Controls.Add(this.ExitBtn);
@@ -159,6 +160,7 @@ namespace lab3_BlackJack.View
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NameTextBox);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StartWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

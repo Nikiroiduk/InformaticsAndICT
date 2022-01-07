@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace lab3_BlackJack.Model
 {
-    class Deck
+    public class Deck
     {
         private List<Card> _Deck { get; set; } = new List<Card>();
         private void newDeck()
@@ -25,11 +25,11 @@ namespace lab3_BlackJack.Model
             newDeck();
         }
 
-        Card getRandomCard()
+        public Card getRandomCard()
         {
             int rnd = Random.Next(_Deck.Count());
             Card tmp = _Deck[rnd];
-            _Deck.Remove(tmp);
+            _Deck.RemoveAt(rnd);
             return tmp;
         }
     }

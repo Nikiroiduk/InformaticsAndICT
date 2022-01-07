@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab3_BlackJack.Model
 {
-    class Player
+    public class Player
     {
         private string _Name { get; set; } = "Undefinde";
         private List<Card> _Hand { get; set; } = new List<Card>();
@@ -34,6 +34,11 @@ namespace lab3_BlackJack.Model
         public void setStake(int Stake)
         {
             this._Stake = Stake;
+        }
+
+        public void addStake(int Stake)
+        {
+            this._Stake += Stake;
         }
 
         public string getName()

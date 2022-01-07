@@ -54,6 +54,11 @@
     <Compile Include="Model\RankEnum.cs" />
     <Compile Include="Model\SuitEnum.cs" />
     <Compile Include="Properties\Parameters.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,14 +75,9 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="View\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AceSpade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Chip500.png" />

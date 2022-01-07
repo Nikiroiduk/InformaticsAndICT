@@ -1,43 +1,18 @@
 ﻿using lab3_BlackJack.Model;
-using lab3_BlackJack.Properties;
 using lab3_BlackJack.View;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lab3_BlackJack.Controller
 {
     class GameController
     {
         private Game _Game = new Game();
-        private int _minStake = Parameters.MinimalMoney;
-        private List<Card> getRandomHand()
-        {
-            return null;
-        }
-
-        private Card getRandomCard()
-        {
-            return null;
-        }
-
-        private int countPoints(List<Card> Hand)
-        {
-            return 0;
-        }
-
+       
         private void Start()
         {
-
+            var MainWindow = new MainWindow(_Game.getPlayer(), _Game.getDealer(), _Game.getDecks());
+            MainWindow.ShowDialog();
         }
-
-        private void Game()
-        {
-            var MainWindow = new MainWindow();
-        }
-
         private void Launch()
         {
             var StartWindow = new StartWindow();

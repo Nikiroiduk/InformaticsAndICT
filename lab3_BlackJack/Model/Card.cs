@@ -5,7 +5,7 @@ using System.Resources;
 
 namespace lab3_BlackJack.Model
 {
-    class Card
+    public class Card
     {
         private readonly Suit _Suit;
         private readonly Rank _Rank;

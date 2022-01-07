@@ -38,5 +38,10 @@ namespace lab3_BlackJack.Model
         {
             this._Decks = Decks;
         }
+        public List<Deck> getDecks()
+        {
+            return _Decks;
+        }
+
     }
 }
