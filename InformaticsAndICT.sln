@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3_Copywriter", "lab3_Cop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3_BlackJack", "lab3_BlackJack\lab3_BlackJack.csproj", "{4D4F006A-8273-451A-B218-7FB3836B14FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab4_GettingToKnowWPF", "lab4_GettingToKnowWPF\lab4_GettingToKnowWPF.csproj", "{0D7AEA90-FBFC-486B-AE41-A1744BD58D17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4D4F006A-8273-451A-B218-7FB3836B14FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D4F006A-8273-451A-B218-7FB3836B14FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D4F006A-8273-451A-B218-7FB3836B14FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D7AEA90-FBFC-486B-AE41-A1744BD58D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D7AEA90-FBFC-486B-AE41-A1744BD58D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D7AEA90-FBFC-486B-AE41-A1744BD58D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D7AEA90-FBFC-486B-AE41-A1744BD58D17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
